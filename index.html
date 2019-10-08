@@ -22,6 +22,17 @@
       return false;
     }
   }
+  
+  function testFactor() {
+    IsFactor(2,1); //true
+    IsFactor(10,5); //true
+    IsFactor(1,2); //false
+    IsFactor(15,5); //true
+    IsFactor(7,3); //false
+    IsFactor(11,5); //false
+    IsFactor(10,0); //false
+    IsFactor(0,10); //false
+  }
 </script>
   
 <!-- Form -->
@@ -30,7 +41,7 @@
   <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
   Input Second Number: <br>
   <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
-  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);">Amicable?</button>
+  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);testFactor();">Amicable?</button>
 </form>
   
 </body>
