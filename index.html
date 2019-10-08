@@ -13,7 +13,11 @@
   }
   
   function IsFactor(num, test) {
-    if ((num % test) == 0) {
+    if (num == 0) {
+      document.write("false");
+      return false;
+    }
+    else if ((num % test) == 0) {
       document.write("true");
       return true;
     }
