@@ -4,14 +4,6 @@
 <meta charset="utf-8">
 </head>
 <body>
-<!-- Form -->
-<form method="get" name="Amicable?">
-  Input First Number <br> 
-  <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
-  Input Second Number: <br>
-  <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
-  <button type="button" onclick="GetIn();">Amicable?</button>
-</form>
   
 <script language="javascript">
   function GetIn() {
@@ -19,7 +11,25 @@
     window.Second = document.getElementById("second").value;
     document.write("The first number is: " + window.First + "<br> The second number is: " + window.Second);
   }
+  
+  funtion IsFactor(a,b) {
+    if ((a % b) == 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 </script>
-
+  
+<!-- Form -->
+<form method="get" name="Amicable?">
+  Input First Number <br> 
+  <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
+  Input Second Number: <br>
+  <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
+  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);">Amicable?</button>
+</form>
+  
 </body>
 </html>
