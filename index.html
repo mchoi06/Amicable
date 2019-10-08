@@ -10,11 +10,15 @@
   <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
   Input Second Number: <br>
   <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
-  <button type="button" onclick="">Amicable?</button>
+  <button type="button" onclick="GetIn();">Amicable?</button>
 </form>
   
 <script language="javascript">
-
+  function GetIn() {
+    window.First = document.getElementById("first").value;
+    window.Second = document.getElementById("second").value;
+    document.write("The first number is: " + window.First + "<br> The second number is: " + window.Second);
+  }
 </script>
 
 </body>
