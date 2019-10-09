@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Embedded Style Sheet</title>
+<style type="text/css">
+  
+  html {
+    height: 100%;
+  }
+  
+  button {
+    margin-top: 1em;
+    background-color: #66ff33;
+  }
+
+  div {
+    font-weight: bold;
+  }
