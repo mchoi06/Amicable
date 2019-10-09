@@ -90,7 +90,7 @@
     document.write("The First Number is: " + window.First + "<br>");
     document.write("The factors of the First Number are: " + showFactors(firstFactors) + "<br>");
     document.write(firstFactors.slice(-1) + "<br>" + Array.isArray(firstFactors.slice(-1)) + "<br>");
-    document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.pop()));
+    document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.slice(-1)));
   }
 /*       
                    
