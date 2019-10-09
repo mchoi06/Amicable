@@ -90,6 +90,7 @@
     GetIn();
     firstFactors = getFactors(window.First);
     secondFactors = getFactors(window.Second);
+    document.write("<h1> Are They Amicable? </h1>");
     document.write("The First Number is: " + window.First + "<br>");
     document.write("The factors of the First Number are: " + showFactors(firstFactors) + "<br>");
     document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.slice(0, -1)) + "<br><br>");
@@ -102,13 +103,15 @@
         document.write("<br><br>This pair of numbers (" + window.First + " & " + window.Second + ") IS amicable!");
         return true;
     } else {
-      document.write("<br><br>This pair of numbers (" + window.First + " & " + window.Second + ") is NOT amicable!");
+      document.write("<br><br><div>This pair of numbers (" + window.First + " & " + window.Second + ") is NOT amicable!</div>");
       return false;
     }
   }
 
 </script>
-  
+
+  <h1> Are They Amicable? </h1>
+
 <!-- Form -->
 <form method="get" name="Amicable?">
   Input First Number <br> 
