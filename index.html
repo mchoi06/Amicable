@@ -60,11 +60,20 @@
     document.write("The sum is: " + sum)
   }
   
-   // Test Code for addFactors() - Needs to be added to onclick in form to be used
+  /* // Test Code for addFactors() - Needs to be added to onclick in form to be used
   function sumFactors() {
     addFactors([0, 3, 4, 5]); //12
     addFactors([0, 0, 0]); //0
     addFactors([0.5, 4.26, 2, 1.0]); //7.76
+  }  */
+  
+  function getFactors(num) {
+    factors = [];
+    for (i=1;i<(num+1);i++) {
+      if (num % i == 0) {
+        factors.push(i);
+    }
+    document.write("The factors are: " + factors)
   }  
 </script>
   
@@ -74,7 +83,7 @@
   <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
   Input Second Number: <br>
   <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
-  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);sumFactors()">Amicable?</button>
+  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);getFactors(100)">Amicable?</button>
 </form>
   
 </body>
