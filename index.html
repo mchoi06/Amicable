@@ -9,7 +9,6 @@
   function GetIn() {
     window.First = document.getElementById("first").value;
     window.Second = document.getElementById("second").value;
-    document.write("The first number is: " + window.First + "<br> The second number is: " + window.Second + "<br>");
   }
   
   function IsFactor(num, test) {
@@ -74,7 +73,6 @@
         factors.push(i);
       }
     }
-    document.write("The factors are: " + factors + "<br>");
   }  
   
   /* // Test Code for getFactors() - Needs to be added to onclick in form to be used
@@ -86,12 +84,21 @@
   
   function amicable() {
     GetIn();
-    IsFactor(window.First, window.Second);
-    getFactors(window.First);
-    getFactors(window.Second);
-    
+    first = get(Factors(window.First));
+    document.write("The first number is: " + window.First + "<br>")
+    document.write("The factors of the First Number are: " + first + "<br>");
+    document.write("The sum of the factors of the first number (excluding itself) is: " + addFactors(first));
   }
-    
+/*       
+                   
+                   The second number is: " + window.Second + "<br>");
+
+    IsFactor(window.First, window.Second);
+    document.write("The factors of the First Number are: " + getFactors(window.Second)) + "<br>";
+    sumFactors(getFactors(window.First));
+    sumFactors(getFactors(window.Second));    
+  }
+  */  
 </script>
   
 <!-- Form -->
