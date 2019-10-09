@@ -74,8 +74,16 @@
         factors.push(i);
       }
     }
-    document.write("The factors are: " + factors);
+    document.write("The factors are: " + factors + "<br>");
   }  
+  
+   // Test Code for getFactors() - Needs to be added to onclick in form to be used
+  function Factors() {
+    getFactors(75); //[1,3,5,15,25,75]
+    getFactors(0); //[0]
+    getFactors(100); //[1,2,4,5,10,20,25,100]
+    getFactors(10.2); //
+  } 
 </script>
   
 <!-- Form -->
@@ -84,7 +92,7 @@
   <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
   Input Second Number: <br>
   <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
-  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);getFactors(100)">Amicable?</button>
+  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);Factors();">Amicable?</button>
 </form>
   
 </body>
