@@ -97,10 +97,10 @@
     firstSum = addFactors(firstFactors.slice(0, -1));
     secondSum = addFactors(secondFactors.slice(0, -1));
     if ((firstSum == window.Second) && (secondSum == window.First)) {
-        document.write("This pair of numbers (" + window.First + " & " + window.Second + ") IS amicable!");
+        document.write("<br><br>This pair of numbers (" + window.First + " & " + window.Second + ") IS amicable!");
         return true;
     } else {
-      document.write("This pair of numbers (" + window.First + " & " + window.Second + ") is NOT amicable!");
+      document.write("<br><br>This pair of numbers (" + window.First + " & " + window.Second + ") is NOT amicable!");
       return false;
     }
   }
