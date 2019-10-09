@@ -51,6 +51,14 @@
     showFactors([0, 0, 0]); //0 0 0
     showFactors([0.5, "yes", 4.26, 2, 1.0]); //0.5 yes 4.26 2 1
   }  */
+  
+  function addFactors(array) {
+    sum = 0;
+    for (i=0;i<array.length;i++) {
+      sum += array[i];
+    }
+    document.write("The sum is: " + sum)
+  }
 </script>
   
 <!-- Form -->
@@ -59,7 +67,7 @@
   <input type="text" placeholder="First Number" name="Amicable" id="first"> <br>
   Input Second Number: <br>
   <input type="text" placeholder="Second Number" name="Amicable" id="second"> <br>
-  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);">Amicable?</button>
+  <button type="button" onclick="GetIn();IsFactor(window.First, window.Second);addFactors([0, 4, 5, 3])">Amicable?</button>
 </form>
   
 </body>
