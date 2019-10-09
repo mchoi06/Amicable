@@ -39,7 +39,6 @@
   
   function showFactors(array) {
     factors = []
-    document.write("Factors are: ");
     for (i=0;i < array.length; i++) {
       document.write(array[i] + " ");
       factors.push(array[i]);
@@ -89,7 +88,7 @@
     GetIn();
     firstFactors = getFactors(window.First);
     document.write("The First Number is: " + window.First + "<br>");
-    document.write("The factors of the First Number are: " + "<br>");
+    document.write("The factors of the First Number are: " + showFactors(firstFactors) + "<br>");
     document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.pop()));
   }
 /*       
