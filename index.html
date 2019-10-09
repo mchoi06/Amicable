@@ -88,7 +88,7 @@
   function amicable() {
     GetIn();
     firstFactors = getFactors(window.First);
-    document.write(firstFactors);
+    document.write(firstFactors.isArray());
     document.write("The first number is: " + window.First + "<br>")
     document.write("The factors of the First Number are: " + showFactors(firstFactors) + "<br>");
     document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.pop()));
