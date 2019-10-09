@@ -38,11 +38,12 @@
   }*/
   
   function showFactors(array) {
-    factors = []
+    var factors = "";
     for (i=0;i < array.length; i++) {
-      document.write(array[i] + " ");
       factors.push(array[i]);
+      factors += (array[i] + " ");
     }
+    return factors;
   }
   
   /* // Test Code for showFactors() - Needs to be added to onclick in form to be used
