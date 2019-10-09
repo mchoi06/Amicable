@@ -44,7 +44,6 @@
       document.write(array[i] + " ");
       factors.push(array[i]);
     }
-    return factors;
   }
   
   /* // Test Code for showFactors() - Needs to be added to onclick in form to be used
@@ -91,7 +90,7 @@
     GetIn();
     firstFactors = getFactors(window.First);
     document.write("The first number is: " + window.First + "<br>")
-    document.write("The factors of the First Number are: " + firstFactors + "<br>");
+    document.write("The factors of the First Number are: " + showFactors(firstFactors) + "<br>");
     document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.pop()));
   }
 /*       
