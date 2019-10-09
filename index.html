@@ -94,6 +94,15 @@
     document.write("The Second Number is: " + window.Second + "<br>");
     document.write("The factors of the Second Number are: " + showFactors(secondFactors) + "<br>");
     document.write("The sum of the factors of the Second Number (excluding itself) is: " + addFactors(secondFactors.slice(0, -1)));
+    firstSum = addFactors(firstFactors.slice(0, -1));
+    secondSum = addFactors(secondFactors.slice(0, -1));
+    if ((firstSum == window.Second) && (secondSum == window.First)) {
+        document.write("This pair of numbers (" + window.First + " & " + window.Second + ") IS amicable!");
+        return true;
+    } else {
+      document.write("This pair of numbers (" + window.First + " & " + window.Second + ") is NOT amicable!");
+      return false;
+    }
   }
 
 </script>
