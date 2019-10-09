@@ -9,20 +9,20 @@
   function GetIn() {
     window.First = document.getElementById("first").value;
     window.Second = document.getElementById("second").value;
-    document.write("The first number is: " + window.First + "<br> The second number is: " + window.Second);
+    document.write("The first number is: " + window.First + "<br> The second number is: " + window.Second + "<br>");
   }
   
   function IsFactor(num, test) {
     if (num == 0) {
-      document.write("false <br>");
+      document.write("Is the second number a factor of the first?: False <br>");
       return false;
     }
     else if ((num % test) == 0) {
-      document.write("true <br>");
+      document.write("Is the second number a factor of the first?: True <br>");
       return true;
     }
     else {
-      document.write("false <br>");
+      document.write("Is the second number a factor of the first?: False <br>");
       return false;
     }
   }
