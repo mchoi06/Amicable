@@ -87,21 +87,15 @@
   function amicable() {
     GetIn();
     firstFactors = getFactors(window.First);
+    secondFactors = getFactors(window.Second);
     document.write("The First Number is: " + window.First + "<br>");
     document.write("The factors of the First Number are: " + showFactors(firstFactors) + "<br>");
-    document.write(firstFactors.slice(0, -1) + "<br>" + Array.isArray(firstFactors.slice(0, -1)) + "<br>");
-    document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.slice(0, -1)));
+    document.write("The sum of the factors of the First Number (excluding itself) is: " + addFactors(firstFactors.slice(0, -1)) + "<br><br>");
+    document.write("The Second Number is: " + window.Second + "<br>");
+    document.write("The factors of the Second Number are: " + showFactors(secondFactors) + "<br>");
+    document.write("The sum of the factors of the Second Number (excluding itself) is: " + addFactors(secondFactors.slice(0, -1)));
   }
-/*       
-                   
-                   The second number is: " + window.Second + "<br>");
 
-    IsFactor(window.First, window.Second);
-    document.write("The factors of the First Number are: " + getFactors(window.Second)) + "<br>";
-    sumFactors(getFactors(window.First));
-    sumFactors(getFactors(window.Second));    
-  }
-  */  
 </script>
   
 <!-- Form -->
